@@ -3,7 +3,7 @@ FROM gitpod/workspace-full
 USER gitpod
 
 RUN sudo apt-get -q update && \
-    sudo apt-get install -yq ruby-dev && \
+    sudo apt-get install -yq build-essential ruby-dev && \
     sudo rm -rf /var/lib/apt/lists/
 
 # Install custom tools, runtime, etc. using apt-get
